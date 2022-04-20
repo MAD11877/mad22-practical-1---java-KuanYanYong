@@ -10,7 +10,12 @@ public class Question3
      * Hint: in.nextInt() to read integer
      */
      
-    Scanner in = new Scanner(System.in);
+    Scanner input = new Scanner(System.in);
+        
+    System.out.print();
+    double integer = input.nextDouble();
+
+    System.out.print(integer*integer);
     
   }
 }
