@@ -12,7 +12,6 @@ public class Question2
      
     Scanner input = new Scanner(System.in);  // Create a Scanner object
         
-    
     double weight = input.nextDouble();
         
         
