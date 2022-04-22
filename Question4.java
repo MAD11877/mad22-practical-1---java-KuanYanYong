@@ -23,10 +23,10 @@ public class Question4
       
 
     for (int i = value - 1; i >= 0; i--) {
-        for (int j = i; j >= 0; j--)
-            System.out.print("*");
-        System.out.println();
+            for (int j = i; j >= 0; j--){
+                System.out.print("*");
+            }   
+            System.out.println();
+        }  
     }
-
-  }
 }
