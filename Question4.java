@@ -21,7 +21,6 @@ public class Question4
     int value = input.nextInt();
 
       
-
     for (int i = value - 1; i >= 0; i--) {
             for (int j = i; j >= 0; j--){
                 System.out.print("*");
