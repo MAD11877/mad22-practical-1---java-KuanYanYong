@@ -27,6 +27,31 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    
-  }
+        ArrayList<Integer> numberList = new ArrayList<>();
+        ArrayList<Integer> distinctNumberList = new ArrayList<>();
+
+        for (int i = 0, max = in.nextInt(); i < max; i++) {
+            numberList.add(in.nextInt());
+        }
+
+        for (int number : numberList) {
+            if (!distinctNumberList.contains(number)) {
+                distinctNumberList.add(number);
+            }
+        }
+
+        int max = 0;
+        int num = 0;
+
+        for (int distinctNumber : distinctNumberList) {
+            int count = Collections.frequency(numberList, distinctNumber);
+
+            if (count > max) {
+                max = count;
+                num = distinctNumber;
+            }
+        }
+
+        System.out.println(num);
+    }
 }
